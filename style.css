@@ -65,7 +65,37 @@ a:hover {
 .logo:hover {
   cursor: default;
 }
+@media (max-width: 768px) {
+  #desktop-nav .logo {
+    font-size: 1em; /* Adjust font size for mobile */
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
 
+  #desktop-nav .logo i {
+    margin-right: 5px; /* Add some spacing to the icon */
+  }
+
+  .nav-links {
+    display: none; /* Hide the navigation links on mobile if you have a hamburger menu */
+  }
+}
+
+/* Additional styling if you're using a hamburger menu for mobile */
+#hamburger-nav {
+  display: none; /* Hide the desktop nav by default on mobile */
+}
+
+@media (max-width: 768px) {
+  #desktop-nav {
+    display: none; /* Hide the desktop nav on smaller screens */
+  }
+
+  #hamburger-nav {
+    display: block; /* Show the hamburger menu on mobile */
+  }
+}
 /* HAMBURGER MENU */
 
 #hamburger-nav {
@@ -429,43 +459,4 @@ footer {
 
 footer p {
   text-align: center;
-}
-#desktop-nav .logo {
-  font-size: 1.2em;
-  color: #333;
-  display: flex;
-  align-items: center;
-}
-
-/* Ensure the location is visible on mobile */
-@media (max-width: 768px) {
-  #desktop-nav .logo {
-    font-size: 1em; /* Adjust font size for mobile */
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-  }
-
-  #desktop-nav .logo i {
-    margin-right: 5px; /* Add some spacing to the icon */
-  }
-
-  .nav-links {
-    display: none; /* Hide the navigation links on mobile if you have a hamburger menu */
-  }
-}
-
-/* Additional styling if you're using a hamburger menu for mobile */
-#hamburger-nav {
-  display: none; /* Hide the desktop nav by default on mobile */
-}
-
-@media (max-width: 768px) {
-  #desktop-nav {
-    display: none; /* Hide the desktop nav on smaller screens */
-  }
-
-  #hamburger-nav {
-    display: block; /* Show the hamburger menu on mobile */
-  }
 }
