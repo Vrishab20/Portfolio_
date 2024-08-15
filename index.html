@@ -7,10 +7,16 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">
+        <i class="fas fa-map-marker-alt"></i> Ottawa, Ontario, CA
+      </div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -21,7 +27,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Vrishab Davey</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -38,16 +44,16 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="assets\ppf.png" alt="Vrishab Davey profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <h1 class="title">Vrishab Davey</h1>
+        <p class="section__text__p2">Machine Learning Engineer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('Resume.pdf')"
           >
             Download CV
           </button>
@@ -57,17 +63,17 @@
         </div>
         <div id="socials-container">
           <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
+   src="./assets/linkedin.png"
+   alt="My LinkedIn profile"
+   class="icon"
+   onclick="window.open('https://www.linkedin.com/in/vrishab-davey/', '_blank')"
+/>
+<img
+src="./assets/github.png"
+alt="My Github profile"
+class="icon"
+onclick="window.open('https://github.com/Vrishab20', '_blank')"
+/>
         </div>
       </div>
     </section>
@@ -77,7 +83,7 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="assets\u-ottawa-logo.png"
             alt="Profile picture"
             class="about-pic"
           />
@@ -91,7 +97,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>2+ years <br />Machine Learning Engineer</p>
             </div>
             <div class="details-container">
               <img
@@ -100,17 +106,19 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>Msc Computer Science AAI<br />B.Tech Computer Science</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              I'm pursuing an MSc in Computer Science with a concentration 
+              in Artificial Intelligence at the University of Ottawa. My academic 
+              journey started with a Bachelor of Technology (B. Tech.) degree from 
+              SRM Institute of Science and Technology. Since then, I've immersed myself 
+              in the tech world, gaining hands-on experience in Python, MySQL, TensorFlow,
+              C, C++, and frameworks like Keras, PyTorch, and scikit-learn. I'm also 
+              proficient in JS, iOS, Android, and MLOps, giving me a versatile toolkit to 
+              tackle various challenges.
             </p>
           </div>
         </div>
@@ -122,140 +130,48 @@
         onclick="location.href='./#experience'"
       />
     </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
+   <section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-flowchart">
+    <div class="experience-item">
+      <div class="experience-content">
+        <h2 class="experience-title">National Institute of Technology, Uttarakhand</h2>
+        <p class="experience-role">Research Intern</p>
+        <p class="experience-location">Nainital, India</p>
+        <p class="experience-dates">Dec 2023 - May 2024</p>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
+    </div>
+    <div class="experience-arrow">&#8595;</div>
+    <div class="experience-item">
+      <div class="experience-content">
+        <h2 class="experience-title">Wipro Technologies</h2>
+        <p class="experience-role">Research Intern</p>
+        <p class="experience-location">Chennai, India</p>
+        <p class="experience-dates">Jan 2024 - Mar 2024</p>
+      </div>
+    </div>
+    <div class="experience-arrow">&#8595;</div>
+    <div class="experience-item">
+      <div class="experience-content">
+        <h2 class="experience-title">Samsung R&D Institute India</h2>
+        <p class="experience-role">Research Intern</p>
+        <p class="experience-location">Bangalore, India</p>
+        <p class="experience-dates">Mar 2023 - Nov 2023</p>
+      </div>
+    </div>
+    <div class="experience-arrow">&#8595;</div>
+    <div class="experience-item">
+      <div class="experience-content">
+        <h2 class="experience-title">SAP</h2>
+        <p class="experience-role">Technical Consultant</p>
+        <p class="experience-location">Bangalore, India</p>
+        <p class="experience-dates">May 2023 - Jun 2023</p>
+      </div>
+    </div>
+  </div>
+</section>
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -264,73 +180,59 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="assets\early-detection-of-brain-tumors-and-beyond-354432-1280x720-1.jpg"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">UNet MRI Brain Segmentation
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/Vrishab20/Brain-Segmentation-using-UNet'"
               >
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="assets\maxresdefault.jpg"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Drowsy Driver Detection</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/Vrishab20/DrowsyDriverDetection'"
               >
                 Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
+              
               </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
+                src="assets\90783699.webp"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Detecting Parkinson's Disease</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/Vrishab20/Parkinson-s-Disease-Predction'"
               >
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              
             </div>
           </div>
         </div>
@@ -352,7 +254,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="vrishabdavey412@gmail.com">vrishabdavey412@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -360,7 +262,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/vrishab-davey">LinkedIn</a></p>
         </div>
       </div>
     </section>
@@ -375,7 +277,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2023 Vrishab Davey. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
